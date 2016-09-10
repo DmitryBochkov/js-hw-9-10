@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Homework 9-10</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/uniform.default.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <header class="container">
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        </header>
+      </div>
+      <div class="nav-wrapper">
+        <nav class="container">
+          <ul>
+            <li><a href="#">Menu Item 1</a></li>
+            <li><a href="#">Menu Item 2</a></li>
+            <li class="dropdown">
+              <a href="#">Menu Item 3</a>
+              <ul class="sub-menu">
+                <li><a href="#">Sub-menu Item 3.1</a></li>
+                <li><a href="#">Sub-menu Item 3.2</a></li>
+                <li><a href="#">Sub-menu Item 3.3</a></li>
+                <li class="dropdown">
+                  <a href="#">Sub-menu Item 3.4</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Sub-menu Item 3.4.1</a></li>
+                    <li><a href="#">Sub-menu Item 3.4.2</a></li>
+                    <li><a href="#">Sub-menu Item 3.4.3</a></li>
+                    <li><a href="#">Sub-menu Item 3.4.4</a></li>
+                    <li><a href="#">Sub-menu Item 3.4.5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sub-menu Item 3.5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Menu Item 4</a></li>
+            <li><a href="#">Menu Item 5</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="carousel-wrapper">
+        <section class="jcarousel container">
+          <ul>
+            <li><img src="img/img1.jpg" width="748" height="300" alt="" /></li>
+            <li><img src="img/img2.jpg" width="748" height="300" alt="" /></li>
+            <li><img src="img/img3.jpg" width="748" height="300" alt="" /></li>
+          </ul>
+          <!-- Controls -->
+          <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+          <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+          <p class="jcarousel-pagination"></p>
+        </section>
+      </div>
+      <div class="main-wrapper">
+        <main class="container">
+          <form class="" action="#" method="post">
+            <fieldset>
+             <legend>Нестандартный <code>select</code> Uniform</legend>
+             <h3>Выберите страну:</h3>
+             <select class="selector" id="country" name="country" tabindex="2">
+              <option value="1">Бельгия</option>
+              <option value="2">Украина</option>
+              <option value="3">Чехия</option>
+              <option value="4">Словакия</option>
+              <option value="5">Румыния</option>
+              <option value="6">Болгария</option>
+              <option value="7">Польша</option>
+              <option value="8">Германия</option>
+              <option value="9">Франция</option>
+              <option value="10">Англия</option>
+              <option value="11">Испания</option>
+            </select>
+            </fieldset>
+            <fieldset>
+              <legend>Нестандартные чекбоксы с помощью JQuery</legend>
+              <div>
+                <label for="ch1">Label 1</label>
+                <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+              </div>
+              <div>
+                <label for="ch2">Label 2</label>
+                <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+              </div>
+              <div>
+                <label for="ch3">Label 3</label>
+                <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+              </div>
+            </fieldset>
+            <fieldset class="css-checkbox">
+              <legend>Нестандартные чекбоксы с помощью CSS</legend>
+              <div>
+              	<input type="checkbox" id="test-check1" />
+              	<label for="test-check1">Чекбокс 1:</label>
+              </div>
+              <div>
+              	<input type="checkbox" id="test-check2" />
+              	<label for="test-check2">Чекбокс 2:</label>
+              </div>
+              <div>
+              	<input type="checkbox" id="test-check3" />
+              	<label for="test-check3">Чекбокс 3:</label>
+              </div>
+            </fieldset>
+          </form>
+        </main>
+      </div>
+      <footer></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/jquery.uniform.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
